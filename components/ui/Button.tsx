@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-
+import { motion } from "motion/react";
 interface IButtonProps {
   label: string;
   className?: string;
@@ -10,19 +10,22 @@ interface IButtonProps {
 
 export const Button = ({ label, className, icon, onClick }: IButtonProps) => {
   return (
-    <button
+    <motion.button
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 0.95 }}
+      whileTap={{ scale: 0.9 }}
       onClick={onClick}
       className={cn(
-        "relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-slate-50",
+        "relative inline-flex h-12 overflow-hidden rounded-xl p-[2px] focus:outline-none",
         className
       )}
     >
       {/* Updated gradient using purple shades */}
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,theme(colors.purple.300)_0%,theme(colors.purple.500)_50%,theme(colors.purple.300)_100%)]" />
+      <span className="absolute inset-[-1000%] animate-[spin_1s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,theme(colors.purple.300)_0%,theme(colors.purple.500)_50%,theme(colors.purple.300)_100%)]" />
 
-      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+      <span className="inline-flex tracking-wider uppercase h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl gap-1">
         {icon} {label}
       </span>
-    </button>
+    </motion.button>
   );
 };

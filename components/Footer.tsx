@@ -1,6 +1,6 @@
 import { Instagram, Mail, Phone } from "lucide-react";
-import dynamic from "next/dynamic";
 import { MapWrapper } from "./ui/MapWrapper";
+import { LinkButton } from "./ui/LinkButton";
 
 export const Footer = () => {
   return (
@@ -24,34 +24,29 @@ export const Footer = () => {
               <h3 className=" font-subtitle   ">Kontakti:</h3>
               <div className="w-12 h-1  border-b-2 border-purple-500/60" />
             </div>
-
-            <a
+            <LinkButton
+              text="123-456-7890"
+              icon={<Phone className="w-5 h-5" />}
               href="tel:123-456-7890"
-              className="flex items-center gap-1 hover:text-purple-500 hover:underline transition-all duration-150"
-            >
-              <Phone className="w-5 h-5" /> <p>123-456-7890</p>
-            </a>
-            <a
+            />
+
+            <LinkButton
+              text="info@maddogmma.com"
+              icon={<Mail className="w-5 h-5 " />}
               href="mailto:info@maddogmma.com"
-              className="flex items-center gap-1 hover:text-purple-500 hover:underline transition-all duration-150"
-            >
-              <Mail className="w-5 h-5 " /> <p>info@maddogmma.com</p>
-            </a>
+            />
           </div>
           <div className="flex flex-col mt-4 items-start gap-2 mb-4 text-sm">
             <div>
               <h3 className="  font-subtitle   ">Zapratite nas:</h3>
               <div className="w-12 h-1  border-b-2 border-purple-500/60" />
             </div>
-            <a
+            <LinkButton
+              text="@mad_dog_mma_rijeka"
+              icon={<Instagram className="w-5 h-5" />}
               href="https://www.instagram.com/mad_dog_mma_rijeka"
-              className="flex items-center gap-1 hover:text-purple-500 hover:underline transition-all duration-150"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram className="h-5 w-5" />
-              <p>@mad_dog_mma_rijeka</p>
-            </a>
+              type="newpage"
+            />
           </div>
         </div>
       </div>

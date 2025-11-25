@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./ui/Button";
-import { ChevronDown, Clock, Euro, Users } from "lucide-react";
+
+import { Clock, Euro, Users } from "lucide-react";
 import { Spotlight } from "./ui/Spotlight";
 import { HeroLearnMore } from "./ui/HeroLearnMore";
 
@@ -23,11 +23,12 @@ export const Hero = () => {
         />
       </div>
 
-      <h1 className="uppercase bg-linear-to-r from-white to-purple-400 bg-clip-text text-transparent z-10 text-6xl! font-subtitle lg:text-7xl! text-center font-extrabold">
+      <h1 className="uppercase relative bg-linear-to-r from-white to-purple-400 bg-clip-text text-transparent z-10 text-6xl! font-subtitle lg:text-7xl! text-center font-extrabold">
         Mad Dog{" "}
         <span className="from-purple-300 to-purple-500 bg-linear-to-r bg-clip-text text-transparent">
           MMA
         </span>
+        <span className="h-1 w-18 border-b-2 border-purple-500/70 absolute bottom-0 right-0"></span>
       </h1>
       <p className="text-sm z-10 mt-2 opacity-80">
         Osjeti adrenalin MMA treninga – od sada u Rijeci!

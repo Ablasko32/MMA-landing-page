@@ -12,7 +12,7 @@ export const HeroLearnMore = () => {
         }
       }}
       icon={<ChevronDown />}
-      className="mt-10 uppercase font-bold"
+      className="mt-10 uppercase font-bold shadow-purple-700/80 shadow-2xl"
       label="Saznaj više"
     />
   );

@@ -7,9 +7,9 @@ import { Carousel } from "@/components/ui/ImageCarusel";
 
 export default function Home() {
   return (
-    <main className="bg-black w-full   text-white  ">
+    <main className="bg-black w-full  text-white  ">
       <Navbar />
-      <div className="flex flex-col items-center gap-10 ">
+      <div className="flex flex-col  gap-10 ">
         <div className="h-screen w-full">
           <div className="pt-18 lg:pt-10 relative  w-full ">
             <Hero />
