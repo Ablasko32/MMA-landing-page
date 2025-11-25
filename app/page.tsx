@@ -10,13 +10,13 @@ export default function Home() {
     <main className="bg-black w-full  text-white  ">
       <Navbar />
       <div className="flex flex-col  gap-10 ">
-        <div className="h-screen w-full">
+        <div className="w-full">
           <div className="pt-18 lg:pt-10 relative  w-full ">
             <Hero />
           </div>
         </div>
         <Features />
-        <section className="mb-14 max-w-full ">
+        <section className="mb-8 max-w-full  ">
           <h2 className="font-subtitle text-center text-4xl! mb-14">
             Upoznajte naš klub
           </h2>
@@ -27,6 +27,12 @@ export default function Home() {
               { title: "aaaa", src: "./bg-boxer.jpg" },
             ]}
           />
+        </section>
+        <section>
+          <p className="text-center text-xs mb-1 opacity-80 tracking-wide">
+            Treninzi se održavaju:
+          </p>
+          <h2 className="font-subtitle text-center text-4xl!">Pon-pet 17h</h2>
         </section>
         <CTA />
         <Footer />

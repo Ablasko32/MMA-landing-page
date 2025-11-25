@@ -17,12 +17,13 @@ export const LinkButton = ({
   if (type === "newpage") {
     return (
       <motion.a
-        whileHover={{ scale: 0.95 }}
+        initial={{ scale: 1, color: "white" }}
+        whileHover={{ scale: 0.95, color: "#A78BFA" }}
         whileTap={{ scale: 0.9 }}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex tracking-wide items-center gap-1 hover:text-purple-500 hover:underline transition-all duration-150"
+        className="flex tracking-wide items-center gap-1 text-white underline"
       >
         <span>{icon}</span>
         <span>{text}</span>
@@ -32,10 +33,11 @@ export const LinkButton = ({
 
   return (
     <motion.a
-      whileHover={{ scale: 0.95 }}
+      initial={{ scale: 1, color: "white" }}
+      whileHover={{ scale: 0.95, color: "#A78BFA" }}
       whileTap={{ scale: 0.9 }}
       href={href}
-      className="flex items-center gap-1 hover:text-purple-500 hover:underline transition-all duration-150"
+      className="flex items-center gap-1 text-white underline   "
     >
       <span>{icon}</span>
       <span>{text}</span>

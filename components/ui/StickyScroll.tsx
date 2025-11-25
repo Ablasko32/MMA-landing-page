@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -43,33 +43,16 @@ export const StickyScroll = ({
   const backgroundColors = [
     "#000000", // black
   ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, #a855f7, #ec4899)",
-
-    // Purple-500 to Indigo-500
-    "linear-gradient(to bottom right, #a855f7, #6366f1)",
-
-    // Purple-500 to Violet-500
-    "linear-gradient(to bottom right, #a855f7, #8b5cf6)",
-  ];
-
-  const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0]
-  );
-
-  useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard]);
 
   return (
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="relative flex h-[28rem] justify-between space-x-10 overflow-y-auto rounded-md p-10 "
+      className="relative flex h-[28rem] justify-between space-x-3 overflow-y-auto p-4 "
       ref={ref}
     >
-      <div className="div relative flex items-start px-4">
+      <div className="div relative flex items-start px-2">
         <div className="max-w-2xl">
           {content.map((item, index) => (
             <div
@@ -97,7 +80,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg mt-10 max-w-sm text-slate-300"
+                className="text-kg mt-10 max-w-xs text-slate-300"
               >
                 {item.description}
               </motion.p>
@@ -107,9 +90,8 @@ export const StickyScroll = ({
         </div>
       </div>
       <div
-        style={{ background: backgroundGradient }}
         className={cn(
-          "sticky top-10 hidden h-60 w-80 overflow-hidden rounded-md bg-white block ",
+          "sticky top-10  h-80 w-100 overflow-hidden rounded-md bg-white block  ",
           contentClassName
         )}
       >

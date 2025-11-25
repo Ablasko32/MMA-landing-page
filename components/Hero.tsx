@@ -17,7 +17,7 @@ export const Hero = () => {
       <div className=" w-60 h-60 lg:h-80 lg:w-80 relative z-10">
         <Image
           src="/logo.png"
-          alt="Mad Dog MMA"
+          alt="Mad Dog MMA Logo"
           className="object-center object-cover  opacity-80"
           fill={true}
         />
