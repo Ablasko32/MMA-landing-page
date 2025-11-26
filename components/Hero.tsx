@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Spotlight } from "./ui/Spotlight";
+import Spotlight from "./ui/Spotlight";
 import { HeroLearnMore } from "./ui/HeroLearnMore";
 import { HeroQuickFeatures } from "./HeroQuickFeatures";
 
@@ -8,9 +8,18 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col  justify-center items-center h-[90vh]  "
+      className="flex flex-col relative  justify-center items-center h-[90vh]  "
     >
-      <div className="bg-[url('/bg-boxer.jpg')] bg-center bg-cover absolute inset-0 z-0 opacity-30"></div>
+      <div className="absolute inset-0 ">
+        <Image
+          src="/bg-boxer.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
+        />
+      </div>
       <Spotlight
         className="absolute  right-0 top-0"
         fill="rgb(167, 139, 250)"
@@ -22,7 +31,7 @@ export const Hero = () => {
           quality={90}
           src="/logo.webp"
           alt="Mad Dog MMA Logo"
-          className="object-center object-cover  opacity-70 brightness-90"
+          className="object-center object-cover   opacity-70 brightness-90"
           fill={true}
         />
       </div>
@@ -38,7 +47,6 @@ export const Hero = () => {
         Osjeti adrenalin MMA treninga – od sada u Rijeci!
       </p>
 
-      {/* quick features */}
       <HeroQuickFeatures />
       <HeroLearnMore />
     </section>

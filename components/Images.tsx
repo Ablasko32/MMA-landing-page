@@ -23,6 +23,7 @@ export const Images = () => {
     <section id="image-gallery" className="">
       <h2 className="font-subtitle text-center text-4xl! mb-14">
         Upoznajte naš klub
+        <span className="h-[1px] bg-white bg-linear-to-r from-black via-white to-black w-28 block mx-auto" />
       </h2>
       <div className="px-10 ">
         <Slider {...settings} className="max-w-2xl mx-auto">

@@ -6,6 +6,7 @@ export const Features = () => {
     <section className="w-full max-w-7xl md:mx-auto mt-4" id="features">
       <h2 className="mb-12 font-subtitle w-full text-center text-4xl!">
         Zašto odabrati MMA?
+        <span className="h-[1px] bg-white bg-linear-to-r from-black via-white to-black w-28 block mx-auto" />
       </h2>
       <StickyScroll
         content={[

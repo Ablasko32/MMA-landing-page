@@ -8,7 +8,12 @@ export const HeroLearnMore = () => {
       onClick={() => {
         const featuresSection = document.getElementById("features");
         if (featuresSection) {
-          featuresSection.scrollIntoView({ behavior: "smooth" });
+          const yOffset = -70;
+          const y =
+            featuresSection.getBoundingClientRect().top +
+            window.scrollY +
+            yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
         }
       }}
       icon={<ChevronDown />}

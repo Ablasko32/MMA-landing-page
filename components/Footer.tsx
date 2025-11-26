@@ -8,6 +8,7 @@ export const Footer = () => {
       <div className="bg-[url('/logo.webp')] md:h-70 md:w-70 md:-top-20 md:right-120 h-60 w-60 bg-center bg-cover opacity-20 absolute -top-14 -right-10"></div>
       <h2 className="text-center w-full mb-14 font-subtitle  text-4xl! z-20    ">
         Kontaktirajte nas
+        <span className="h-[1px] bg-white bg-linear-to-r from-black via-white to-black w-28 block mx-auto" />
       </h2>
       <div className="flex flex-col md:flex-row md:gap-20">
         <div>
