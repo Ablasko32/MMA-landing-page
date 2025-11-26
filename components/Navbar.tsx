@@ -3,7 +3,7 @@ import { LinkButton } from "./ui/LinkButton";
 
 export const Navbar = () => {
   return (
-    <nav className="sticky text-white top-0 z-50 w-full bg-black py-4 px-4 md:px-8">
+    <nav className="sticky text-white top-0 z-50 w-full bg-black  py-4 px-4 md:px-8">
       <ul className="flex items-center justify-between max-w-4xl mx-auto gap-10 text-xs">
         <li>
           <LinkButton

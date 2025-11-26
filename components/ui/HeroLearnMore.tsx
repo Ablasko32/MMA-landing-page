@@ -12,7 +12,7 @@ export const HeroLearnMore = () => {
         }
       }}
       icon={<ChevronDown />}
-      className="mt-8 animate-pulse duration-250 uppercase font-bold shadow-purple-700/40 shadow-2xl lg:mt-18"
+      className="mt-8 animate-pulse duration-350 uppercase font-bold shadow-purple-700/40 shadow-2xl lg:mt-18"
       label="Saznaj više"
     />
   );

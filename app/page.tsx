@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Schedule } from "@/components/Schedule";
+import { Testimonials } from "@/components/Testimonials";
 import { Carousel } from "@/components/ui/ImageCarusel";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
             ]}
           />
         </section>
+        <Testimonials />
         <Schedule />
         <CTA />
         <Footer />
