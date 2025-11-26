@@ -5,7 +5,7 @@ import { LinkButton } from "./ui/LinkButton";
 export const Footer = () => {
   return (
     <footer className="overflow-x-hidden pl-4 md:pl-6 pr-4 pt-10 flex flex-col  items-start border-t relative border-purple-500/40 w-full">
-      <div className="bg-[url('/logo.png')] md:h-70 md:w-70 md:-top-20 md:right-120 h-60 w-60 bg-center bg-cover opacity-20 absolute -top-14 -right-10"></div>
+      <div className="bg-[url('/logo.webp')] md:h-70 md:w-70 md:-top-20 md:right-120 h-60 w-60 bg-center bg-cover opacity-20 absolute -top-14 -right-10"></div>
       <h2 className="text-center w-full mb-14 font-subtitle  text-4xl! z-20    ">
         Kontaktirajte nas
       </h2>

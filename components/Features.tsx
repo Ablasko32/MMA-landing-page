@@ -16,7 +16,8 @@ export const Features = () => {
             content: (
               <div className="relative w-full h-full">
                 <Image
-                  src="/boxer-kicking.jpg"
+                  quality={90}
+                  src="/boxer-kicking.webp"
                   alt="Muškarac udara nogom"
                   fill
                   className="object-cover object-center rounded-md"
@@ -31,9 +32,10 @@ export const Features = () => {
             content: (
               <div className="relative w-full h-full">
                 <Image
-                  src="/workout.jpg"
+                  src="/workout.webp"
                   alt="Osobe koje treniraju"
                   fill
+                  quality={90}
                   className="object-cover object-center rounded-md"
                 />
               </div>
@@ -46,9 +48,10 @@ export const Features = () => {
             content: (
               <div className="relative w-full h-full">
                 <Image
-                  src="/scale.jpg"
+                  src="/scale.webp"
                   alt="Noge na vazi"
                   fill
+                  quality={90}
                   className="object-cover object-center rounded-md"
                 />
               </div>

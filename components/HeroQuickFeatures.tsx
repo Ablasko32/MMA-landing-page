@@ -9,7 +9,7 @@ export const HeroQuickFeatures = () => {
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.5 }}
         className="flex items-center gap-2 group"
       >
         <div className="bg-purple-500/30 p-2 rounded-md group-hover:bg-purple-500/20">
@@ -25,7 +25,7 @@ export const HeroQuickFeatures = () => {
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.7 }}
         className="flex items-center gap-2  group  "
       >
         <div className="bg-purple-500/30 p-2 rounded-md group-hover:bg-purple-500/20">
@@ -43,7 +43,7 @@ export const HeroQuickFeatures = () => {
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.9 }}
         className="flex items-center gap-2 group"
       >
         <div className="bg-purple-500/30 group-hover:bg-purple-500/20 p-2 rounded-md">

@@ -10,6 +10,7 @@ const TESTIMONIALS = [
     stars: 5,
   },
   { name: "Tin", text: "Atmosfera i obuka na najvišoj razini", stars: 5 },
+  { name: "Nikša", text: "Top 👊", stars: 5 },
 ];
 
 export const Testimonials = () => {
@@ -21,7 +22,7 @@ export const Testimonials = () => {
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.04 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="border bg-linear-to-br from-black via-black to-purple-500/20  border-purple-500/40 shadow-2xl shadow-purple-500/10 rounded-xl lg:w-72 p-4 min-w-[12rem]  flex-shrink-0 snap-start"
+            className="border bg-linear-to-br from-black via-black to-purple-500/20  border-purple-500/30 shadow-2xl shadow-purple-500/10 rounded-xl lg:w-72 p-4 min-w-[12rem]  flex-shrink-0 snap-start"
             key={idx}
           >
             <p className="text-md mb-3  text-sm md:text-md tracking-wide ">
@@ -35,7 +36,7 @@ export const Testimonials = () => {
                 ))}
               </div>
               <p className=" tracking-wide text-xs mt-1 opacity-80 ">
-                {testimonial.name}
+                -{testimonial.name}
               </p>
             </div>
           </motion.div>

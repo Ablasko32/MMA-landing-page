@@ -19,19 +19,20 @@ export const Hero = () => {
 
       <div className=" w-60 h-60 lg:h-80 lg:w-80 relative z-10">
         <Image
-          src="/logo.png"
+          quality={90}
+          src="/logo.webp"
           alt="Mad Dog MMA Logo"
           className="object-center object-cover  opacity-70 brightness-90"
           fill={true}
         />
       </div>
 
-      <h1 className="uppercase relative bg-linear-to-r from-white to-purple-400 bg-clip-text text-transparent z-10 text-6xl! font-subtitle lg:text-8xl! text-center font-extrabold">
+      <h1 className="uppercase  relative  z-10 text-6xl! font-subtitle lg:text-8xl! text-center font-extrabold">
         Mad Dog{" "}
-        <span className="from-purple-300 to-purple-500 bg-linear-to-r bg-clip-text text-transparent">
+        <span className="from-purple-300 to-purple-500 bg-linear-to-r bg-clip-text text-transparent text-shadow-[0_35px_35px_rgb(167_139_250_/_0.25)] ">
           MMA
         </span>
-        <span className="h-1 w-18 border-b-2 border-purple-500/70 absolute bottom-0 right-0"></span>
+        <span className="h-1 w-18 border-b-2 shadow-sm shadow-purple-500/50 border-purple-500/70 absolute bottom-0 right-0"></span>
       </h1>
       <p className="text-sm lg:text-xl z-10 mt-2 opacity-80">
         Osjeti adrenalin MMA treninga – od sada u Rijeci!
