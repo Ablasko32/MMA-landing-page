@@ -91,7 +91,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           }}
         >
           <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            className="absolute brightness-75 inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
@@ -161,7 +161,7 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative overflow-x-hidden  w-full h-full mx-auto"
+      className="relative overflow-x-hidden  w-full  mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

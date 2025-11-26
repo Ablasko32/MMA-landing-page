@@ -5,7 +5,7 @@ import { TileLayer } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-const POSITION: [number, number] = [45.3275, 14.4425];
+const POSITION: [number, number] = [45.3287028, 14.4498297];
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -27,7 +27,7 @@ const Map = () => {
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png"
       />
       <Marker position={POSITION}>
-        <Popup>Ružičeva 7, Rijeka</Popup>
+        <Popup>{process.env.ADDRESS as string}</Popup>
       </Marker>
     </MapContainer>
   );

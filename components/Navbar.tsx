@@ -8,16 +8,16 @@ export const Navbar = () => {
         <li>
           <LinkButton
             icon={<Phone className="w-5" />}
-            text="+385 99 123 4567"
-            href="tel:+385991234567"
+            text={process.env.PHONE_NUMBER as string}
+            href={`tel:${process.env.PHONE_NUMBER as string}`}
           />
         </li>
         <li>
           <LinkButton
             icon={<MapPin className="w-5" />}
-            text="Ružičeva 7, Rijeka"
+            text={process.env.ADDRESS as string}
             type="newpage"
-            href="https://www.google.com/maps"
+            href={process.env.MAP_LINK as string}
           />
         </li>
       </ul>
