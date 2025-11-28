@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="bg-black w-full  text-white  ">
       <Navbar />
-      <div className="flex flex-col  gap-10 ">
+      <div className="flex flex-col  gap-10 md:gap-20 ">
         <div className="w-full min-h-dvh">
           <Hero />
         </div>

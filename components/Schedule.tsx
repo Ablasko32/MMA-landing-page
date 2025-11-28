@@ -4,15 +4,15 @@ import { motion } from "motion/react";
 
 export const Schedule = () => {
   return (
-    <section id="raspored-treninga">
-      <p className="text-center text-xs mb-1 opacity-80 tracking-wide">
+    <section id="raspored-treninga" className="my-4">
+      <p className="text-center text-xs md:text-sm mb-1 opacity-80 tracking-wide">
         Treninzi se održavaju:
       </p>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="font-subtitle text-center text-4xl!"
+        className="font-subtitle text-center text-4xl! md:text-5xl!"
       >
         <motion.span
           initial={{ x: -100 }}

@@ -3,6 +3,7 @@ import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import { Subtitle } from "./ui/Subtitle";
 
 const IMAGES = [
   "/boxer-kicking.webp",
@@ -21,17 +22,17 @@ export const Images = () => {
 
   return (
     <section id="image-gallery" className="">
-      <h2 className="font-subtitle text-center text-4xl! mb-14">
-        Upoznajte naš klub
-        <span className="h-[1px] bg-white bg-linear-to-r from-black via-white to-black w-28 block mx-auto" />
-      </h2>
+      <Subtitle text="Upoznajte naš klub" />
+      <p className="text-sm text-center mb-8 opacity-70">
+        &quot;Naša misija je približiti MMA svima. &quot;
+      </p>
       <div className="px-10 ">
         <Slider {...settings} className="max-w-2xl mx-auto">
           {IMAGES.map((src, idx) => {
             return (
               <div
                 key={idx}
-                className="h-96 relative rounded-md overflow-hidden "
+                className="h-96 lg:h-140 relative rounded-md overflow-hidden "
               >
                 <Image
                   src={src}

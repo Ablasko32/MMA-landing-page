@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hr">
+    <html lang="hr" className="bg-black">
       <body
-        className={`${inter.variable} ${bebasNeue.variable} antialiased max-w-dvw overflow-x-hidden font-body`}
+        className={`${inter.variable} ${bebasNeue.variable} antialiased mx-auto overflow-x-hidden font-body`}
       >
         {children}
       </body>

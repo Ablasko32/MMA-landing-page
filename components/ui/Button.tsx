@@ -16,14 +16,14 @@ export const Button = ({ label, className, icon, onClick }: IButtonProps) => {
       whileTap={{ scale: 0.9 }}
       onClick={onClick}
       className={cn(
-        "relative inline-flex h-12 overflow-hidden rounded-xl p-[2px] focus:outline-none",
+        "relative inline-flex h-12 overflow-hidden rounded-xl p-[2px] font-title   focus:outline-none",
         className
       )}
     >
       {/* Updated gradient using purple shades */}
       <span className="absolute inset-[-1000%] animate-[spin_1s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,theme(colors.purple.300)_0%,theme(colors.purple.500)_50%,theme(colors.purple.300)_100%)]" />
 
-      <span className="inline-flex tracking-wider uppercase h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl gap-1">
+      <span className="inline-flex tracking-widest uppercase h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950  py- md:text-md lg:text-xl text-sm font-medium text-white backdrop-blur-3xl gap-2 px-6">
         {icon} {label}
       </span>
     </motion.button>

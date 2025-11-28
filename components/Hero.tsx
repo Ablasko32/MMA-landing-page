@@ -19,6 +19,7 @@ export const Hero = () => {
           sizes="100vw"
           className="object-cover opacity-30"
         />
+        <div className="bg-linear-to-b from-black/30 via-transparent to-black/30 inset-0 absolute"></div>
       </div>
       <Spotlight
         className="absolute  right-0 top-0"
@@ -26,7 +27,7 @@ export const Hero = () => {
       />
       <Spotlight className="absolute  left-0 top-4" fill="rgb(167, 139, 250)" />
 
-      <div className=" w-60 h-60 lg:h-80 lg:w-80 relative z-10">
+      <div className=" w-60 h-60 lg:h-90 lg:w-90 relative z-10">
         <Image
           quality={90}
           src="/logo.webp"
@@ -41,7 +42,7 @@ export const Hero = () => {
         <span className="from-purple-300 to-purple-500 bg-linear-to-r bg-clip-text text-transparent text-shadow-[0_35px_35px_rgb(167_139_250_/_0.25)] ">
           MMA
         </span>
-        <span className="h-1 w-18 border-b-2 shadow-sm shadow-purple-500/50 border-purple-500/70 absolute bottom-0 right-0"></span>
+        <span className="h-1 w-18 border-b-1 shadow-sm shadow-purple-500/50 border-purple-500/70 absolute bottom-0 right-0"></span>
       </h1>
       <p className="text-sm lg:text-xl z-10 mt-2 opacity-80">
         Osjeti adrenalin MMA treninga – od sada u Rijeci!
