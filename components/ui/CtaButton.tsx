@@ -10,7 +10,9 @@ export const CtaButton = () => {
       className="ml-4  animate-pulse duration-350 z-20 shadow-2xl shadow-purple-700"
       label="Prijavite se"
       onClick={() => {
-        window.location.href = `tel:${process.env.PHONE_NUMBER as string}`;
+        window.location.href = `tel:${
+          process.env.NEXT_PUBLIC_PHONE_NUMBER as string
+        }`;
       }}
     />
   );

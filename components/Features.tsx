@@ -65,13 +65,13 @@ export const Features = () => {
         <StickyScroll content={FEATURES} />
       </div>
 
-      <div className="lg:flex hidden flex-col  gap-24 w-5xl  items-center">
+      <div className="lg:flex hidden w-full flex-col  gap-18 w-5xl  items-center">
         {FEATURES.map((feature, idx) => {
           return (
             <div
               key={idx}
               className={cn(
-                "flex justify-between w-6xl mx- gap-12  ",
+                "flex justify-between w-4xl mx- gap-12  ",
                 idx % 2 === 1 ? "flex-row-reverse" : ""
               )}
             >
@@ -84,9 +84,9 @@ export const Features = () => {
                 </p>
               </div>
 
-              <div className="relative h-90 w-1/3 rounded-md overflow-hidden ">
+              <div className="relative h-90 w-1/3 rounded-md overflow-hidden shadow-2xl shadow-purple-500/18 ">
                 <Image
-                  className="object-cover object-center hover:scale-105 duration-150"
+                  className="object-cover object-center hover:scale-105 duration-150 filter brightness-90 "
                   quality={90}
                   alt="Slika treninga ili borbe"
                   src={feature.image ?? null}

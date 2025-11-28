@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { Subtitle } from "./ui/Subtitle";
+import { Instagram } from "lucide-react";
+import { LinkButton } from "./ui/LinkButton";
 
 const IMAGES = [
   "/boxer-kicking.webp",
@@ -23,7 +25,7 @@ export const Images = () => {
   return (
     <section id="image-gallery" className="">
       <Subtitle text="Upoznajte naš klub" />
-      <p className="text-sm text-center mb-8 opacity-70">
+      <p className="text-sm text-center mb-8 opacity-60 italic">
         &quot;Naša misija je približiti MMA svima. &quot;
       </p>
       <div className="px-10 ">
@@ -45,6 +47,14 @@ export const Images = () => {
             );
           })}
         </Slider>
+      </div>
+      <div className="flex justify-center mt-3 text-sm">
+        <LinkButton
+          type="newpage"
+          href={process.env.NEXT_PUBLIC_INSTAGRAM as string}
+          icon={<Instagram className="w-4 h-4" />}
+          text="Pogledaj više"
+        />
       </div>
     </section>
   );

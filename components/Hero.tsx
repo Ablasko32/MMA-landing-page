@@ -37,7 +37,7 @@ export const Hero = () => {
         />
       </div>
 
-      <h1 className="uppercase filter brightness-75 bg-[url('/cracked.jpg')] bg-clip-text text-transparent bg-center bg-cover   relative  z-10 text-6xl! font-subtitle lg:text-8xl! text-center font-extrabold">
+      <h1 className="uppercase filter brightness-75 bg-[url('/cracked.webp')] bg-clip-text text-transparent bg-center bg-cover   relative  z-10 text-7xl! font-subtitle lg:text-9xl! text-center font-extrabold">
         Mad Dog{" "}
         <span className="from-purple-300/60 to-purple-500/80 bg-linear-to-r bg-clip-text text-transparent text-shadow-[0_35px_35px_rgb(167_139_250_/_0.25)] ">
           MMA

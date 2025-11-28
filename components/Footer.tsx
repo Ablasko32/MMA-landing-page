@@ -24,15 +24,15 @@ export const Footer = () => {
               <div className="w-12 h-1  border-b-2 border-purple-500/60" />
             </div>
             <LinkButton
-              text={process.env.PHONE_NUMBER as string}
+              text={process.env.NEXT_PUBLIC_PHONE_NUMBER as string}
               icon={<Phone className="w-5 h-5" />}
-              href={`tel:${process.env.PHONE_NUMBER as string}`}
+              href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER as string}`}
             />
 
             <LinkButton
-              text={process.env.EMAIL as string}
+              text={process.env.NEXT_PUBLIC_EMAIL as string}
               icon={<Mail className="w-5 h-5 " />}
-              href={`mailto:${process.env.EMAIL as string}`}
+              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL as string}`}
             />
           </div>
           <div className="flex flex-col mt-4 items-start gap-2 mb-4 text-sm">
@@ -41,7 +41,7 @@ export const Footer = () => {
               <div className="w-12 h-1  border-b-2 border-purple-500/60" />
             </div>
             <LinkButton
-              text={process.env.INSTAGRAM_HANDLE as string}
+              text={process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE as string}
               icon={<Instagram className="w-5 h-5" />}
               href={process.env.INSTAGRAM as string}
               type="newpage"
@@ -49,6 +49,10 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
+      <p className="text-center font-title tracking-widest w-full text-xl opacity-20">
+        Join the pack
+      </p>
       <p className="text-center font-light opacity-50 w-full text-xs mt-6 mb-3">
         ©{new Date().getFullYear()} Mad Dog MMA
       </p>

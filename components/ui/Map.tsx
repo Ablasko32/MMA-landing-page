@@ -28,7 +28,7 @@ const Map = () => {
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png"
       />
       <Marker position={POSITION}>
-        <Popup>Ružićeva 7, Rijeka</Popup>
+        <Popup>{process.env.NEXT_PUBLIC_ADDRESS as string}</Popup>
       </Marker>
     </MapContainer>
   );

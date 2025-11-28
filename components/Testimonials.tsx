@@ -25,7 +25,7 @@ export const Testimonials = () => {
             className="border bg-linear-to-br from-black via-black to-purple-500/20  border-purple-500/30 shadow-2xl shadow-purple-500/10 rounded-xl lg:w-72 p-4 min-w-[12rem]  flex-shrink-0 snap-start"
             key={idx}
           >
-            <p className="text-md mb-3  text-sm md:text-md tracking-wide ">
+            <p className="text-md mb-3  text-sm md:text-md tracking-wide italic ">
               &quot;{testimonial.text}&quot;
             </p>
 

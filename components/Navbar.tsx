@@ -8,16 +8,16 @@ export const Navbar = () => {
         <li>
           <LinkButton
             icon={<Phone className="w-5" />}
-            text={process.env.PHONE_NUMBER as string}
-            href={`tel:${process.env.PHONE_NUMBER as string}`}
+            text={process.env.NEXT_PUBLIC_PHONE_NUMBER as string}
+            href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER as string}`}
           />
         </li>
         <li>
           <LinkButton
             icon={<MapPin className="w-5" />}
-            text={process.env.ADDRESS as string}
+            text={process.env.NEXT_PUBLIC_ADDRESS as string}
             type="newpage"
-            href={process.env.MAP_LINK as string}
+            href={process.env.NEXT_PUBLIC_MAP_LINK as string}
           />
         </li>
       </ul>
