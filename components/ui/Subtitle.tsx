@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export const Subtitle = ({ text }: { text: string }) => {
   return (
-    <h2 className="mb-12 font-subtitle md:mb-14 lg:mb-22 lg:mt-12 md:text-5xl! w-full text-center text-4xl!">
+    <h2 className="mb-12 z-20 font-title md:mb-14 lg:mb-22 lg:mt-12 md:text-5xl! lg:text-6xl! w-full text-center text-4xl!">
       {text}
       <motion.span
         initial={{ opacity: 0 }}

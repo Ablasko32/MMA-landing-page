@@ -20,14 +20,17 @@ export const Images = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
   };
 
   return (
-    <section id="image-gallery" className="">
+    <section id="image-gallery" className="relative">
       <Subtitle text="Upoznajte naš klub" />
-      <p className="text-sm text-center mb-8 opacity-60 italic">
+
+      <p className="text-sm text-center z-20 mb-8 opacity-60 italic">
         &quot;Naša misija je približiti MMA svima. &quot;
       </p>
+
       <div className="px-10 ">
         <Slider {...settings} className="max-w-2xl mx-auto">
           {IMAGES.map((src, idx) => {

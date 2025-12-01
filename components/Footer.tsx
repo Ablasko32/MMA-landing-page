@@ -53,7 +53,7 @@ export const Footer = () => {
       <p className="text-center font-title tracking-widest w-full text-xl opacity-20">
         Join the pack
       </p>
-      <p className="text-center font-light opacity-50 w-full text-xs mt-6 mb-3">
+      <p className="text-center font-light opacity-40 w-full text-xs mt-6 mb-3">
         ©{new Date().getFullYear()} Mad Dog MMA
       </p>
     </footer>

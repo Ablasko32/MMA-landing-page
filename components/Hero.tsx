@@ -27,12 +27,12 @@ export const Hero = () => {
       />
       <Spotlight className="absolute  left-0 top-4" fill="rgb(167, 139, 250)" />
 
-      <div className=" w-60 h-60 lg:h-90 lg:w-90 relative z-10">
+      <div className=" w-60 h-60 lg:h-90 lg:w-90 relative z-10 ">
         <Image
           quality={90}
           src="/logo.webp"
           alt="Mad Dog MMA Logo"
-          className="object-center object-cover   opacity-70 brightness-90"
+          className="object-center object-cover filter opacity-70 brightness-90 "
           fill={true}
         />
       </div>
